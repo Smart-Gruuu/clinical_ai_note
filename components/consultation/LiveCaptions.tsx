@@ -36,7 +36,7 @@ export default function LiveCaptions({
   return (
     <div className="transcript-container">
       {/* Header */}
-      <div className="transcript-header">
+      {/* <div className="transcript-header">
         <div className="transcript-header-title">
           <span>💬</span>
           Live Captions
@@ -52,10 +52,10 @@ export default function LiveCaptions({
             PAUSED
           </span>
         )}
-      </div>
+      </div> */}
 
       {/* Caption Area */}
-      <div className="caption-area" ref={captionAreaRef}>
+      {/* <div className="caption-area" ref={captionAreaRef}>
         {segments.length === 0 && !interimText && (
           <div className="caption-empty">
             <div className="caption-empty-icon">🎤</div>
@@ -73,30 +73,30 @@ export default function LiveCaptions({
               {status === 'paused' && 'Recording paused'}
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Rendered caption segments */}
-        {segments.map((segment) => (
+        {/* {segments.map((segment) => (
           <div key={segment.id} className="caption-line">
             <span className="caption-timestamp">{segment.timestamp}</span>
             <div className="caption-content">
               <span className="caption-text">{segment.text}</span>
             </div>
           </div>
-        ))}
+        ))} */}
 
         {/* Interim (currently being spoken) */}
-        {interimText && (
+        {/* {interimText && (
           <div className="caption-line">
             <span className="caption-timestamp">{currentTime}</span>
             <div className="caption-content">
               <span className="caption-text interim">{interimText}</span>
             </div>
           </div>
-        )}
+        )} */}
 
         {/* Listening indicator when no captions yet */}
-        {status === 'listening' && segments.length === 0 && !interimText && (
+        {/* {status === 'listening' && segments.length === 0 && !interimText && (
           <div className="caption-listening">
             <div className="listening-waves">
               <div className="listening-wave"></div>
@@ -108,7 +108,7 @@ export default function LiveCaptions({
             <span>Listening...</span>
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }
